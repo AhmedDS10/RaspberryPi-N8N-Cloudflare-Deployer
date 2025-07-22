@@ -137,3 +137,7 @@ wget -O install-n8n.sh https://raw.githubusercontent.com/AhmedDS10/RaspberryPi-N
 chmod +x install-n8n.sh
 ./install-n8n.sh
 ```
+### يجب تغيير الايبي الى عنوان ايبي الخاص بالسيرفر
+```bash
+    echo "    service: http://192.168.0.177:8443" | sudo tee -a /etc/cloudflared/config.yml > /dev/null
+```
