@@ -156,7 +156,7 @@ services:
     ports:
       - '8443:5678'
     environment:
-      - N8N_HOST=localhost
+      - N8N_HOST=192.168.0.177
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
       - NODE_ENV=production
