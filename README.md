@@ -132,7 +132,8 @@ docker run -d \
 
 ### Manual Installation
 
+```bash
 wget -O install-n8n.sh https://raw.githubusercontent.com/AhmedDS10/RaspberryPi-N8N-Cloudflare-Deployer/main/rpi-n8n-cloudflare-installer.sh
 chmod +x install-n8n.sh
 ./install-n8n.sh
-
+```
