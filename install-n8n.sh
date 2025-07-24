@@ -82,7 +82,6 @@ configure_n8n() {
     sudo chmod -R 755 ~/.n8n
 
     cat > ~/n8n/docker-compose.yml <<EOF
-version: '3'
 
 services:
   postgres:
