@@ -371,7 +371,7 @@ configure_cloudflare_tunnel() {
     echo "credentials-file: /etc/cloudflared/${clean_filename}" | sudo tee -a /etc/cloudflared/config.yml > /dev/null
     echo "ingress:" | sudo tee -a /etc/cloudflared/config.yml > /dev/null
     echo "  - hostname: ${domain_name}" | sudo tee -a /etc/cloudflared/config.yml > /dev/null
-    echo "    service: http://localhost:8443" | sudo tee -a /etc/cloudflared/config.yml > /dev/null
+    echo "    service: http://192.168.0.178:8443" | sudo tee -a /etc/cloudflared/config.yml > /dev/null
     echo "  - service: http_status:404" | sudo tee -a /etc/cloudflared/config.yml > /dev/null
     
     # Check configuration file contents
